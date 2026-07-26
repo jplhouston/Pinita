@@ -281,3 +281,38 @@ footer {
   .hero-photo, .tall, .wide { grid-column: auto; grid-row: auto; }
   .section { padding: 74px 0; }
 }
+
+
+.community-section {
+  background: #f7f3ef;
+}
+
+.community-section .section-heading p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--muted);
+}
+
+.padlet-shell {
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.padlet-shell .padlet-embed {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+@media (max-width: 620px) {
+  .padlet-shell {
+    border-radius: 18px;
+  }
+
+  .padlet-shell iframe {
+    height: 680px !important;
+  }
+}
