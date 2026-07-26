@@ -7,7 +7,7 @@
   --accent-dark: #6f294d;
   --line: rgba(143, 61, 103, 0.16);
   --white: #ffffff;
-  --shadow: 0 20px 60px rgba(87, 38, 63, 0.12);
+  --shadow: 0 20px 60px rgba(87, 38, 63, 0.10);
 }
 
 * { box-sizing: border-box; }
@@ -36,11 +36,9 @@ h1, h2, blockquote {
   display: flex;
   flex-direction: column;
   background:
-    radial-gradient(circle at 20% 20%, rgba(240, 178, 207, .45), transparent 35%),
-    radial-gradient(circle at 80% 30%, rgba(255, 222, 184, .5), transparent 35%),
-    linear-gradient(145deg, #fff7fb 0%, #f9ebf3 55%, #fff9f1 100%);
-  overflow: hidden;
-  position: relative;
+    radial-gradient(circle at 18% 18%, rgba(240, 178, 207, .18), transparent 34%),
+    radial-gradient(circle at 82% 28%, rgba(255, 222, 184, .20), transparent 34%),
+    linear-gradient(145deg, #fffafc 0%, #fbf4f7 58%, #fffdf9 100%);
 }
 
 .nav {
@@ -48,8 +46,6 @@ h1, h2, blockquote {
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
-  position: relative;
-  z-index: 2;
 }
 
 .brand {
@@ -67,8 +63,6 @@ h1, h2, blockquote {
 .hero-content {
   margin: auto;
   padding: 70px 0 110px;
-  position: relative;
-  z-index: 2;
 }
 
 .eyebrow {
@@ -114,7 +108,7 @@ h1 {
 .primary {
   background: var(--accent);
   color: white;
-  box-shadow: 0 12px 30px rgba(143, 61, 103, .25);
+  box-shadow: 0 12px 30px rgba(143, 61, 103, .20);
 }
 
 .primary:hover { background: var(--accent-dark); }
@@ -249,18 +243,6 @@ footer {
   background: #24191f;
   color: #e8dce2;
 }
-
-.floating-hearts::before,
-.floating-hearts::after {
-  content: "❤";
-  position: absolute;
-  font-size: 18rem;
-  color: rgba(143, 61, 103, .035);
-  z-index: 1;
-}
-
-.floating-hearts::before { top: 90px; right: -20px; transform: rotate(12deg); }
-.floating-hearts::after { top: 420px; left: -40px; transform: rotate(-14deg); }
 
 @media (max-width: 820px) {
   .timeline, .message-grid { grid-template-columns: 1fr; }

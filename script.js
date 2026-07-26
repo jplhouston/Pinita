@@ -11,6 +11,5 @@ document.getElementById("messageForm").addEventListener("submit", function (even
     `Nombre: ${name}\n\nMensaje para Mayra:\n${message}`
   );
 
-  // Replace this email with the address where you want to receive the messages.
   window.location.href = `mailto:YOUR_EMAIL_HERE?subject=${subject}&body=${body}`;
 });
