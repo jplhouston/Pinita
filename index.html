@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8f3d67" />
+  <title>Para Mayra ❤️</title>
+  <meta name="description" content="Un rincón creado con amor para celebrar a Mayra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand">Para Mayra</div>
+      <a class="nav-link" href="#mensaje">Dejar un mensaje</a>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow">Un regalo hecho con amor</p>
+      <h1>Mayra, haces mi vida más bonita.</h1>
+      <p class="hero-copy">
+        Este espacio reúne recuerdos, palabras y momentos que muestran lo especial que eres
+        para quienes tenemos la fortuna de caminar a tu lado.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#historia">Ver nuestra historia</a>
+        <a class="button secondary" href="#mensaje">Escribirle algo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="historia" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>De Colombia a Texas, siempre construyendo sueños.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-card">
+          <span>01</span>
+          <h3>El comienzo</h3>
+          <p>Dos caminos se encontraron y comenzó una historia llena de aprendizaje, cariño y nuevos sueños.</p>
+        </article>
+        <article class="timeline-card">
+          <span>02</span>
+          <h3>La aventura</h3>
+          <p>Entre cambios, viajes y retos, hemos aprendido a avanzar juntos y a disfrutar cada etapa.</p>
+        </article>
+        <article class="timeline-card">
+          <span>03</span>
+          <h3>Lo que viene</h3>
+          <p>Una nueva vida, metas profesionales y muchos recuerdos todavía por crear.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Galería</p>
+          <h2>Momentos que guardamos en el corazón</h2>
+          <p>Reemplaza estas imágenes por tus fotos favoritas de Mayra y de ustedes.</p>
+        </div>
+
+        <div class="gallery">
+          <div class="photo placeholder"><span>Foto 1</span></div>
+          <div class="photo placeholder tall"><span>Foto 2</span></div>
+          <div class="photo placeholder"><span>Foto 3</span></div>
+          <div class="photo placeholder wide"><span>Foto 4</span></div>
+          <div class="photo placeholder"><span>Foto 5</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container quote-section">
+      <blockquote>
+        “Mayra, tu fuerza, tu alegría y la forma en que amas a tu familia hacen que cada día a tu lado tenga un significado especial.”
+      </blockquote>
+      <p>— John</p>
+    </section>
+
+    <section id="mensaje" class="section message-section">
+      <div class="container message-grid">
+        <div>
+          <p class="eyebrow">Un mensaje para Mayra</p>
+          <h2>Ayúdame a llenar este regalo de amor.</h2>
+          <p>
+            Escribe un recuerdo, una felicitación o unas palabras que quieras compartir con ella.
+          </p>
+          <p class="note">
+            Por ahora, el formulario abre tu aplicación de correo. Más adelante podemos convertirlo
+            en un muro público con base de datos.
+          </p>
+        </div>
+
+        <form class="message-form" id="messageForm">
+          <label>
+            Tu nombre
+            <input id="name" type="text" placeholder="Escribe tu nombre" required />
+          </label>
+          <label>
+            Tu mensaje
+            <textarea id="message" rows="6" placeholder="Escribe algo especial para Mayra..." required></textarea>
+          </label>
+          <button class="button primary" type="submit">Enviar mensaje ❤️</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con amor para Mayra · <span id="year"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
